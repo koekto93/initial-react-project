@@ -3,7 +3,7 @@ import logger from 'redux-logger'
 import createSagaMiddleware from 'redux-saga'
 
 import rootMiddleware from './middleware'
-import reducer from './modules/reducer'
+import reducer from './modules'
 
 export default function createStore() {
   const sagaMiddleware = createSagaMiddleware()
