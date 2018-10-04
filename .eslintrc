@@ -2,7 +2,7 @@
   "extends": ["react-app", "prettier"],
   "rules": {
     "jsx-quotes": [1],
-    "no-console": 1,
+    "no-console": 2,
     "no-debugger": 2
   },
   "plugins": ["prettier"]
