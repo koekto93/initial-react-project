@@ -7,30 +7,6 @@ export const SET_SELECTED_TRIP_ID = `${module}/SET_SELECTED_TRIP_ID`
 export const RESET_SELECTED_TRIP_ID = `${module}/RESET_SELECTED_TRIP_ID`
 export const RESERVATED_SEATS = `${module}/RESERVATED_SEATS`
 
-// const TripsInfoRecord = Record({
-//         id: null,
-//         from: "",
-//         to: "",
-//         date: null,
-//         meetingPoint: "",
-//         subway: "",
-//         destination: "",
-//         destinationSubway: '',
-//         coordinates: [],
-//         seats: 0,
-//         coast: 100
-
-// })
-
-// const ReducerState = new Record({
-//   trips: new Map({}),
-//   selectedTripId: null,
-//   isLoading: false,
-//   error: null
-// });
-
-// const defaultState = new ReducerState()
-
 const defaultState = {}
 
 export default function reducer(testState = defaultState, action = {}) {
@@ -40,27 +16,6 @@ export default function reducer(testState = defaultState, action = {}) {
     //   return tripsState
     //     .set('isLoading', true)
     //     .set('error', null)
-    // case FETCH_TRIPS_SUCCEEDED:
-    //   return tripsState
-    //     .set('trips', arrToMap(payload, TripsInfoRecord))
-    //     .set('isLoading', false)
-    //     .set('error', null)
-    // case FETCH_TRIPS_FAILED:
-    //   return tripsState
-    //     .set('isLoading', false)
-    //     .set('error', payload)
-    // case SET_SELECTED_TRIP_ID:
-    //   return tripsState
-    //     .set('selectedTripId', payload)
-    // case RESET_SELECTED_TRIP_ID:
-    //   return tripsState
-    //     .set('selectedTripId', null)
-    // case RESERVATED_SEATS:
-    //   const {id, value} = payload
-    //   return tripsState.updateIn(
-    //     ['trips', id],
-    //     trip => trip.set('seats', trip.seats - value)
-    //   )
     default:
       return testState
   }

@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom'
 
 import MainPage from './MainPage'
 import SecondPage from './SecondPage'
+import Login from './Login'
 
 import { Container } from './styled'
 
@@ -13,15 +14,10 @@ class Pages extends Component {
     return (
       <Container>
         <Switch>
-          <Redirect from="/" exact to="/mainPage" />
+          <Redirect from="/" exact to="/login" />
           <Route path="/mainPage" component={MainPage} />
           <Route path="/secondPage" component={SecondPage} />
-          {/* <Route path="/trips" exact component={Trips} />
-                    <Route path="/trips/:id" component={TripDetails} />
-                    <Route path="/aboutme" component={AboutMe} />
-                    <Route path="/aboutro" component={AboutRO} />
-                    <Route path="/payment" component={Payment} />
-                    <Route component={NotFound} /> */}
+          <Route path="/login" component={Login} />
         </Switch>
       </Container>
     )

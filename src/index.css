@@ -1,6 +1,78 @@
+@font-face {
+  font-family: 'PFEncoreSansPro-Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local("PFEncoreSansPro Bold"), local("PFEncoreSansPro-Bold"), url("fonts/PFEncoreSansPro-Bold.woff2") format("woff2"), url("fonts/PFEncoreSansPro-Bold.woff") format("woff"), url("fonts/PFEncoreSansPro-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'PFEncoreSansPro-Book';
+  font-style: normal;
+  font-weight: 300;
+  src: local("PFEncoreSansPro Book"), local("PFEncoreSansPro-Book"), url("fonts/PFEncoreSansPro-Book.woff2") format("woff2"), url("fonts/PFEncoreSansPro-Book.woff") format("woff"), url("fonts/PFEncoreSansPro-Book.otf") format("opentype"); 
+}
+
+@font-face {
+  font-family: 'PFEncoreSansPro-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local("PFEncoreSansPro Medium"), local("PFEncoreSansPro-Medium"), url("fonts/PFEncoreSansPro-Medium.woff2") format("woff2"), url("fonts/PFEncoreSansPro-Medium.woff") format("woff"), url("fonts/PFEncoreSansPro-Medium.otf") format("opentype"); 
+}
+
+@font-face {
+  font-family: 'PFEncoreSansPro-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local("PFEncoreSansPro Light"), local("PFEncoreSansPro-Light"), url("fonts/PFEncoreSansPro-Light.woff2") format("woff2"), url("fonts/PFEncoreSansPro-Light.woff") format("woff"), url("fonts/PFEncoreSansPro-Light.otf") format("opentype"); 
+}
+
+@font-face {
+  font-family: 'PFEncoreSansPro-Regular';
+  font-style: normal;
+  font-weight: 500;
+  src: local("PFEncoreSansPro Regular"), local("PFEncoreSansPro-Regular"), url("fonts/PFEncoreSansPro-Regular.woff2") format("woff2"), url("fonts/PFEncoreSansPro-Regular.woff") format("woff"), url("fonts/PFEncoreSansPro-Regular.otf") format("opentype"); 
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; 
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: PFEncoreSansPro-Light, 'Segoe UI Light';
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 14px;
+  background-color: #F6F7F9;
+  min-width: 1440px;
+  user-select: none;  
+}
+
+p { 
+  margin: 0;
+  padding: 0;
+}
+
+.simple-button {
+  width: 200px;
+  height: 40px;
+}
+
+.medium-button {
+  width: 150px;
+  height: 35px;
+}
+
+.small-button {
+  width: 112px;
+  height: 36px;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: flex-end;
 }
