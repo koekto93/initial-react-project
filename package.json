@@ -1,30 +1,26 @@
 {
-  "name": "my",
+  "name": "app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
-    "core-js": "3",
-    "final-form": "^4.12.0",
-    "history": "^4.7.2",
-    "lodash": "^4.17.11",
-    "moment": "^2.24.0",
+    "axios": "^0.19.0",
+    "final-form": "^4.18.2",
+    "history": "^4.9.0",
+    "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.5.2",
-    "react-final-form": "^4.1.0",
-    "react-modal": "^3.8.1",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
+    "react-dom": "^16.8.6",
+    "react-final-form": "^6.3.0",
+    "react-modal": "^3.9.1",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
     "react-router-redux": "^4.0.8",
-    "react-scripts": "2.0.4",
-    "react-spinners": "^0.5.3",
-    "redux": "^4.0.0",
+    "react-scripts": "3.0.1",
+    "react-spinners": "^0.5.13",
+    "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
-    "redux-persist": "^5.10.0",
-    "redux-saga": "^1.0.2",
-    "reselect": "^4.0.0",
-    "styled-components": "^4.2.0"
+    "redux-saga": "^1.0.5",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,24 +31,31 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-preset-flow": "^6.23.0",
-    "enzyme": "^3.6.0",
-    "enzyme-adapter-react-16": "^1.5.0",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "husky": "^1.1.0",
-    "jest": "^23.6.0",
-    "lint-staged": "^7.3.0",
-    "prettier": "^1.14.3"
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2"
   },
   "husky": {
     "hooks": {
@@ -60,7 +63,7 @@
     }
   },
   "lint-staged": {
-    "*.{js, css}": [
+    "*.js?(x)": [
       "node_modules/.bin/eslint --max-warnings=0",
       "prettier --write",
       "git add"

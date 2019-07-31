@@ -1,14 +1,7 @@
-import React from 'react'
-import { Authorization } from '../../_common'
-
-import { Container } from './styled'
+import React from 'react';
 
 const Login = () => {
-  return (
-    <Container>
-      <Authorization />
-    </Container>
-  )
-}
+	return <div>authoridsdszation</div>;
+};
 
-export default Login
+export default Login;

@@ -1,23 +1,22 @@
-//@flow
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { CustomInput } from './styled'
+const Input = ({ value, onChange, type }) => {
+	const handleChange = event => {
+		onChange(event.target.value);
+	};
 
-type InputProps = {
-  onChange: Function,
-  value: string,
-}
+	return <input onChange={handleChange} value={value} type={type} />;
+};
 
-const Input = ({ value, onChange, type }: InputProps) => {
-  const handleChange = event => {
-    onChange(event.target.value)
-  }
-
-  return <CustomInput onChange={handleChange} value={value} type={type} />
-}
+Input.propTypes = {
+	value: PropTypes.string,
+	onChange: PropTypes.func,
+	type: PropTypes.string,
+};
 
 Input.defaultProps = {
-  type: 'text',
-}
+	type: 'text',
+};
 
-export default Input
+export default Input;

@@ -1,9 +1,17 @@
 {
-  "extends": ["react-app", "prettier"],
+  "extends": [
+    "react-app", 
+    "prettier", 
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "rules": {
-    "jsx-quotes": [1],
+    "jsx-quotes": [1, "prefer-double"],
     "no-console": 2,
-    "no-debugger": 2
+    "no-debugger": 2,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-key": 2
   },
   "plugins": ["prettier"]
 }

@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
-
-import { Container } from './styled'
+import React, { Component } from 'react';
 
 export class MainPage extends Component {
-  render() {
-    return (
-      <Container>
-        <div>Главная страница</div>
-      </Container>
-    )
-  }
+	render() {
+		return (
+			<div>
+				<div>Главная страница</div>
+			</div>
+		);
+	}
 }
 
-export default MainPage
+export default MainPage;

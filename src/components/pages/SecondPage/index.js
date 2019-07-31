@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
-
-import { Container } from './styled'
+import React, { Component } from 'react';
 
 export class SecondPage extends Component {
-  render() {
-    return (
-      <Container>
-        <div>2-я страница</div>
-      </Container>
-    )
-  }
+	render() {
+		return (
+			<div>
+				<div>2-я страница</div>
+			</div>
+		);
+	}
 }
 
-export default SecondPage
+export default SecondPage;
