@@ -1,0 +1,37 @@
+.l-radio {
+    display: inline-flex;
+}
+.c-radio {
+    padding-left: 32px;
+    display: flex;
+    
+    /* Option */
+    & .option {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+   
+    /* Check */
+    &__input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+    }
+
+    &__box {
+        position: absolute;
+        margin-left: -32px;
+    }
+
+    & p, span {
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;      
+    }
+}
+
+
+
+

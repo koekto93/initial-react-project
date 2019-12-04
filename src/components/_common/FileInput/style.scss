@@ -1,0 +1,44 @@
+@keyframes example {
+  from {color: #303335;}
+  to {color: #FF0000;}
+}
+
+.file-upload-wrapper {
+  border: 2px dashed #66C05D;
+  border-radius: 5px;
+  background: white;
+  padding: 32px;
+
+  &_active {
+    border: 2px solid #66C05D;
+    background: #DAF0D8;
+  }
+}
+
+.file-upload {
+  &__control {
+    padding: 32px 18px;
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    border-radius: 5px;
+    border: 2px dashed #66C05D;
+    background-color: rgba(218, 240, 216, 0.3);
+    
+    &_active {
+      justify-content: center;
+      border: 2px solid #66C05D;
+    }
+  }
+  &__types {
+    &_error {
+      animation: example 0.7s infinite alternate;
+    }
+  }
+}
+
+.dropzone-previews {
+  display: flex;
+}
+
+

@@ -1,0 +1,24 @@
+.configurator-form {
+   // background-color: #fff;
+    &__return-button {
+        padding-left: 0px !important;
+    }
+
+    &__fields {
+        background-color: #fff;
+    }
+    
+    &__file-input {
+        background-color: #fff;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        padding: 32px 24px;
+        border-radius: 6px;
+        background-color: #fff3c2;
+        margin-top: 24px;
+    }
+
+}

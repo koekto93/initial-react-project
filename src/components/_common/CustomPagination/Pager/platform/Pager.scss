@@ -1,0 +1,93 @@
+.lm-lego-DataGrid__Pager {
+    flex: 0 0 auto;
+    //padding: 10px 32px;
+    height: 48px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;  
+
+    &__container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        border: 1px solid #F5F6F7;
+        border-radius: 4px;
+        height: 100%;
+        //@include getBasicText(16);
+    }
+
+    &__block {
+        list-style: none;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        &.left, &.right {
+            flex: 1 1 0px;
+            max-width: 200px;
+            font-size: 14px;
+            line-height: 1.57;
+            margin: 0;
+            padding: 0;
+        }
+        &.middle {
+            border-left: 1px solid #F5F6F7;
+            border-right: 1px solid #F5F6F7;
+            //flex: 1 0 728px;
+            flex: 1 0 auto;
+            margin: 0;
+            padding: 0;
+            &:empty {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        border-right: 1px solid #F5F6F7;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.pageBtn {
+            flex: 1 0 52px;
+        }
+        &.separator {
+            flex: 1 1 100%;
+        }
+        &:last-child {
+            border-right: none;
+        }
+
+        &.active {
+            background-color: #a6adb4;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 13px 8px;
+        text-decoration: none;
+        color: #213344;
+        text-align: center;
+        outline: none !important;
+        &.pointer {
+            cursor: pointer;
+        }
+        .active > & {
+            color: #FFFFFF;
+            cursor: default;
+        }
+
+        .disabled > & {
+            color: #213344;
+            cursor: default;
+        }
+    }
+}

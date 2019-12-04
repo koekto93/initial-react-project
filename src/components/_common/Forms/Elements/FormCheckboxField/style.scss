@@ -1,0 +1,9 @@
+.form-checkbox-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__additional-field {
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,12 @@
+.form-checkbox-group {
+    display: flex;
+    flex-direction: column;
+
+    &__row {
+        flex-direction: row;
+    }
+
+    & > label:not(:last-child), label:first-child {
+        margin-bottom: 24px;
+    }
+}
